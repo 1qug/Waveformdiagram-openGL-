@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\functionManager\AmplitudeSpectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\ConstellationDiagram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\EighthPowerSpectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\EyeDiagram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\FourthPowerSpectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstAmpHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstEnvelope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstFreqHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstFrequency.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstPhase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\InstPhaseHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\NonlinearInstPhase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\PowerSpectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\Spectrogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\SquareSpectrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\WaterfallPlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\Waveform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functionManager\WaveformDataLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WaveformdiagramopenGL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="third_party\qcustomplot\qcustomplot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\functionManager\AmplitudeSpectrum.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\ConstellationDiagram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\EighthPowerSpectrum.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\EyeDiagram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\FourthPowerSpectrum.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstAmpHistogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstEnvelope.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstFreqHistogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstFrequency.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstPhase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\InstPhaseHistogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\NonlinearInstPhase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\PowerSpectrum.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\Spectrogram.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\SquareSpectrum.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\WaterfallPlot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\functionManager\Waveform.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="src\functionManager\WaveformDataLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="src\WaveformdiagramopenGL.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="third_party\qcustomplot\qcustomplot.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <QtUic Include="src\functionManager\AmplitudeSpectrum.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\ConstellationDiagram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\EighthPowerSpectrum.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\EyeDiagram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\FourthPowerSpectrum.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstAmpHistogram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstEnvelope.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstFreqHistogram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstFrequency.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstPhase.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\InstPhaseHistogram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\NonlinearInstPhase.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\PowerSpectrum.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\Spectrogram.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\SquareSpectrum.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\WaterfallPlot.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\functionManager\Waveform.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="src\WaveformdiagramopenGL.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\WaveformdiagramopenGL.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\icons\arrow-down-hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\arrow-down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\arrow-up-hover.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\arrow-up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\check.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\style.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="third_party\qcustomplot\GPL.txt">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="third_party\qcustomplot\README.md">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="doc\readme.md">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

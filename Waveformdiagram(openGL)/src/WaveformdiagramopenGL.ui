@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WaveformdiagramopenGLClass</class>
+ <widget class="QWidget" name="WaveformdiagramopenGLClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>764</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WaveformdiagramopenGL</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="titlelabel">
+           <property name="styleSheet">
+            <string notr="true">	font: 16pt &quot;楷体&quot;;</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;OpenGl实时波形图&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>1</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="2">
+         <widget class="QToolButton" name="btnInstPhase">
+          <property name="text">
+           <string>瞬时相位</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QToolButton" name="btnInstPhaseHistogram">
+          <property name="text">
+           <string>瞬时相位直方图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QToolButton" name="btnPlaceholder1">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QToolButton" name="btnInstFreqHistogram">
+          <property name="text">
+           <string>瞬时频率直方图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QToolButton" name="btnPlaceholder3">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QToolButton" name="btnInstFrequency">
+          <property name="text">
+           <string>瞬时频率</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QToolButton" name="btnFourthPowerSpectrum">
+          <property name="text">
+           <string>四次方谱</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QToolButton" name="btnPowerSpectrum">
+          <property name="text">
+           <string>功率谱</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QToolButton" name="btnEighthPowerSpectrum">
+          <property name="text">
+           <string>八次方谱</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QToolButton" name="btnInstEnvelope">
+          <property name="text">
+           <string>瞬时包络</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QToolButton" name="btnPlaceholder2">
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QToolButton" name="btnEyeDiagram">
+          <property name="text">
+           <string>眼图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="4">
+         <widget class="QToolButton" name="btnConstellationDiagram">
+          <property name="text">
+           <string>星座图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QToolButton" name="btnWaterfallPlot">
+          <property name="text">
+           <string>瀑布图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QToolButton" name="btnNonlinearInstPhase">
+          <property name="text">
+           <string>非线性瞬时相位</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QToolButton" name="btnAmplitudeSpectrum">
+          <property name="text">
+           <string>幅度谱</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QToolButton" name="btnInstAmpHistogram">
+          <property name="text">
+           <string>瞬时幅度直方图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QToolButton" name="btnSpectrogram">
+          <property name="text">
+           <string>语谱图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QToolButton" name="btnWaveform">
+          <property name="text">
+           <string>波形图</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QToolButton" name="btnSquareSpectrum">
+          <property name="text">
+           <string>二次方谱</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>637</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../resources/WaveformdiagramopenGL.qrc"/>
+ </resources>
+ <connections/>
+</ui>

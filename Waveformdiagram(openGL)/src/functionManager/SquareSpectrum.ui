@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SquareSpectrumClass</class>
+ <widget class="QWidget" name="SquareSpectrumClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>723</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SquareSpectrum</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_main">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="mainContent" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_main" stretch="7,3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="plotWidget" native="true"/>
+      </item>
+      <item>
+       <widget class="QWidget" name="controlPanelWidget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_side">
+         <item>
+          <widget class="QGroupBox" name="groupBox_display">
+           <property name="title">
+            <string>展示</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_displayGroup">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_displayButtons" stretch="1,1">
+              <property name="spacing">
+               <number>12</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="pushButton_import">
+                <property name="text">
+                 <string>导入</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_demo">
+                <property name="text">
+                 <string>示例</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_control">
+           <property name="title">
+            <string>控制</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_controlGroup">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_controlButtons" stretch="1,1">
+              <property name="spacing">
+               <number>12</number>
+              </property>
+              <item>
+               <widget class="QPushButton" name="pushButton_start">
+                <property name="text">
+                 <string>开始</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_pause">
+                <property name="text">
+                 <string>暂停</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_clear">
+              <property name="text">
+               <string>清空</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QFormLayout" name="formLayout_parameters">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_refreshMs">
+                <property name="text">
+                 <string>刷新ms</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_pointCount">
+                <property name="text">
+                 <string>点数</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_yMin">
+                <property name="text">
+                 <string>Y最小</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_yMax">
+                <property name="text">
+                 <string>Y最大</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_refreshMs"/>
+              </item>
+              <item row="1" column="1">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_pointCount"/>
+              </item>
+              <item row="2" column="1">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_yMin"/>
+              </item>
+              <item row="3" column="1">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_yMax"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_channel">
+           <property name="title">
+            <string>通道</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_channelGroup">
+            <item>
+             <widget class="QCheckBox" name="checkBox_channel1">
+              <property name="text">
+               <string>通道1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_color1">
+              <property name="text">
+               <string>颜色1</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_channel2">
+              <property name="text">
+               <string>通道2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_color2">
+              <property name="text">
+               <string>颜色2</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_channel3">
+              <property name="text">
+               <string>通道3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_color3">
+              <property name="text">
+               <string>颜色3</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_channel4">
+              <property name="text">
+               <string>通道4</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_color4">
+              <property name="text">
+               <string>颜色4</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_channel5">
+              <property name="text">
+               <string>通道5</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_color5">
+              <property name="text">
+               <string>颜色5</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="groupBox_view">
+           <property name="title">
+            <string>显示</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_viewGroup">
+            <item>
+             <widget class="QCheckBox" name="checkBox_grid">
+              <property name="text">
+               <string>网格</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_cursor">
+              <property name="text">
+               <string>游标</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_autoScaleX">
+              <property name="text">
+               <string>自动缩放X轴</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_autoScaleY">
+              <property name="text">
+               <string>自动缩放Y轴</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

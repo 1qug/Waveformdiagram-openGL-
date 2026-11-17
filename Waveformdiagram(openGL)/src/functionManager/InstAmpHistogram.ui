@@ -1,0 +1,22 @@
+<UI version="4.0" >
+ <class>InstAmpHistogramClass</class>
+ <widget class="QWidget" name="InstAmpHistogramClass" >
+  <property name="objectName" >
+   <string notr="true">InstAmpHistogramClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>InstAmpHistogram</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <connections/>
+</UI>

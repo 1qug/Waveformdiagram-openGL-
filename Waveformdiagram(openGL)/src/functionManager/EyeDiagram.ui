@@ -1,0 +1,22 @@
+<UI version="4.0" >
+ <class>EyeDiagramClass</class>
+ <widget class="QWidget" name="EyeDiagramClass" >
+  <property name="objectName" >
+   <string notr="true">EyeDiagramClass</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>600</width>
+	<height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>EyeDiagram</string>
+  </property>$centralwidget$
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <connections/>
+</UI>

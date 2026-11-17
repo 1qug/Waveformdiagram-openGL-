@@ -1,0 +1,452 @@
+/* =======================================================
+ * 1. 原有 QSS 代码 (保持不变)
+ * ======================================================= */
+QWidget#widget {
+    background-color: #333333;
+}
+
+QWidget#WaveformdiagramopenGLClass {
+    background-color: #333333;
+}
+
+QToolButton {
+    background-color: #4A4A4A;
+    color: #D3D3D3;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 18px;
+    padding: 12px 30px;
+    margin: 30px 15px; 
+    min-width: 180px;
+    min-height: 40px;
+    text-align: center;
+}
+
+QToolButton::menu-indicator {
+    image: none;
+    width: 0px;
+}
+
+QToolButton:hover {
+    background-color: #555555;
+    border: 1px solid #6E6E6E;
+}
+
+QToolButton:pressed {
+    background-color: #3A3A3A;
+    border: 1px solid #4A4A4A;
+}
+QLabel#titlelabel {
+	color: rgb(255, 255, 255);
+	font-weight:700;
+}
+QWidget#widget_2 {
+    min-height: 40px;
+}
+/* =======================================================
+ * 2. 新增 QSS 代码 (修复版)
+ * ======================================================= */
+
+/* 2.1 基础样式 */
+QWidget#WaveformClass {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 12px;
+}
+
+QWidget#WaveformClass QWidget#plotWidget {
+    background-color: #161616;
+    border: 1px solid #333333;
+}
+
+QWidget#WaveformClass QWidget#controlPanelWidget {
+    background-color: #2b2b2b;
+    border-left: 1px solid #111111;
+}
+
+/* 2.2 分组框 */
+QWidget#WaveformClass QGroupBox {
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-top: 12px;
+    background-color: #252525;
+}
+
+QWidget#WaveformClass QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    color: #b0b0b0;
+    left: 10px;
+}
+
+/* 2.3 按钮 (QPushButton) */
+QWidget#WaveformClass QPushButton {
+    background-color: #3c3f41;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 5px 12px;
+    color: #e0e0e0;
+    min-height: 18px;
+}
+
+QWidget#WaveformClass QPushButton:hover {
+    background-color: #4b4e51;
+    border: 1px solid #555555;
+}
+
+QWidget#WaveformClass QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+QWidget#WaveformClass QPushButton:disabled {
+    background-color: #2a2a2a;
+    color: #666666;
+}
+
+/* 2.4 复选框 (QCheckBox)
+ * 注意：Qt 的 QSS 不支持 data: URI，图片必须放在 qrc 资源里，
+ * 否则 image 加载失败，选中态就只剩一个蓝色方块（没有对号）。
+ */
+QWidget#WaveformClass QCheckBox {
+    spacing: 6px;
+    color: #e0e0e0;
+    background: transparent;
+}
+
+QWidget#WaveformClass QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #8a8a8a;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+QWidget#WaveformClass QCheckBox::indicator:hover {
+    border-color: #b5b5b5;
+}
+
+QWidget#WaveformClass QCheckBox::indicator:checked {
+    background-color: #32a6ff;
+    border: 2px solid #32a6ff;
+    image: url(:/WaveformdiagramopenGL/icons/check.svg);
+}
+
+QWidget#WaveformClass QCheckBox::indicator:checked:hover {
+    background-color: #47afff;
+    border-color: #47afff;
+}
+
+QWidget#WaveformClass QCheckBox::indicator:disabled {
+    border-color: #4a4a4a;
+    background-color: transparent;
+}
+
+QWidget#WaveformClass QCheckBox::indicator:checked:disabled {
+    background-color: #2c5b82;
+    border-color: #2c5b82;
+}
+
+/* 2.5 标签 */
+QWidget#WaveformClass QLabel {
+    color: #d0d0d0;
+    background: transparent;
+}
+
+/* 2.6 数字微调框 (QDoubleSpinBox)
+ * 上下键按参考图做成右侧并排的两个细箭头（^ v），
+ * 不显示按钮底色和分隔线；箭头图片取自 qrc 资源。
+ */
+QWidget#WaveformClass QDoubleSpinBox {
+    background-color: #393939;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    /* 右侧预留两个并排箭头的位置：Qt 只按单个按钮宽度收缩输入区，
+       多留出的 padding 可以避免输入框盖住左边的上箭头（否则点不到） */
+    padding: 2px 20px 2px 6px;
+    color: #e0e0e0;
+    selection-background-color: #32a6ff;
+    min-height: 18px;
+}
+
+QWidget#WaveformClass QDoubleSpinBox:hover {
+    border: 1px solid #767676;
+}
+
+QWidget#WaveformClass QDoubleSpinBox:focus {
+    border: 1px solid #32a6ff;
+}
+
+QWidget#WaveformClass QDoubleSpinBox::up-button,
+QWidget#WaveformClass QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    height: 22px;
+    background: transparent;
+    border: none;
+}
+
+/* 两个按钮并排：down 在最右侧，up 向左平移一个按钮宽度 */
+QWidget#WaveformClass QDoubleSpinBox::down-button {
+    right: 1px;
+}
+
+QWidget#WaveformClass QDoubleSpinBox::up-button {
+    right: 21px;
+}
+
+QWidget#WaveformClass QDoubleSpinBox::up-arrow {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up.svg);
+    width: 10px;
+    height: 6px;
+}
+
+QWidget#WaveformClass QDoubleSpinBox::down-arrow {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down.svg);
+    width: 10px;
+    height: 6px;
+}
+
+/* 悬停/按下时只提亮箭头本身（参考图中没有按钮底色） */
+QWidget#WaveformClass QDoubleSpinBox::up-arrow:hover {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up-hover.svg);
+}
+
+QWidget#WaveformClass QDoubleSpinBox::down-arrow:hover {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down-hover.svg);
+}
+
+QWidget#WaveformClass QDoubleSpinBox::up-arrow:pressed {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up-hover.svg);
+}
+
+QWidget#WaveformClass QDoubleSpinBox::down-arrow:pressed {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down-hover.svg);
+}
+
+/* 2.7 滚动条 */
+QWidget#WaveformClass QScrollBar:vertical {
+    border: none;
+    background: #1e1e1e;
+    width: 10px;
+    margin: 0px;
+}
+QWidget#WaveformClass QScrollBar::handle:vertical {
+    background: #424242;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QWidget#WaveformClass QScrollBar::handle:vertical:hover {
+    background: #555555;
+}
+QWidget#WaveformClass QScrollBar::add-line:vertical, 
+QWidget#WaveformClass QScrollBar::sub-line:vertical {
+    height: 0px;
+}
+/* =======================================================
+ * 3. SquareSpectrumClass修饰
+ * ======================================================= */
+
+/* 2.1 基础样式 */
+QWidget#SquareSpectrumClass {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-family: "Microsoft YaHei", "Segoe UI", sans-serif;
+    font-size: 12px;
+}
+
+QWidget#SquareSpectrumClass QWidget#plotWidget {
+    background-color: #161616;
+    border: 1px solid #333333;
+}
+
+QWidget#SquareSpectrumClass QWidget#controlPanelWidget {
+    background-color: #2b2b2b;
+    border-left: 1px solid #111111;
+}
+
+/* 2.2 分组框 */
+QWidget#SquareSpectrumClass QGroupBox {
+    border: 1px solid #3c3c3c;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding-top: 12px;
+    background-color: #252525;
+}
+
+QWidget#SquareSpectrumClass QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    color: #b0b0b0;
+    left: 10px;
+}
+
+/* 2.3 按钮 (QPushButton) */
+QWidget#SquareSpectrumClass QPushButton {
+    background-color: #3c3f41;
+    border: 1px solid #2d2d2d;
+    border-radius: 4px;
+    padding: 5px 12px;
+    color: #e0e0e0;
+    min-height: 18px;
+}
+
+QWidget#SquareSpectrumClass QPushButton:hover {
+    background-color: #4b4e51;
+    border: 1px solid #555555;
+}
+
+QWidget#SquareSpectrumClass QPushButton:pressed {
+    background-color: #2b2b2b;
+}
+
+QWidget#SquareSpectrumClass QPushButton:disabled {
+    background-color: #2a2a2a;
+    color: #666666;
+}
+
+/* 2.4 复选框 (QCheckBox)
+ * 注意：Qt 的 QSS 不支持 data: URI，图片必须放在 qrc 资源里，
+ * 否则 image 加载失败，选中态就只剩一个蓝色方块（没有对号）。
+ */
+QWidget#SquareSpectrumClass QCheckBox {
+    spacing: 6px;
+    color: #e0e0e0;
+    background: transparent;
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #8a8a8a;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator:hover {
+    border-color: #b5b5b5;
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator:checked {
+    background-color: #32a6ff;
+    border: 2px solid #32a6ff;
+    image: url(:/WaveformdiagramopenGL/icons/check.svg);
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator:checked:hover {
+    background-color: #47afff;
+    border-color: #47afff;
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator:disabled {
+    border-color: #4a4a4a;
+    background-color: transparent;
+}
+
+QWidget#SquareSpectrumClass QCheckBox::indicator:checked:disabled {
+    background-color: #2c5b82;
+    border-color: #2c5b82;
+}
+
+/* 2.5 标签 */
+QWidget#SquareSpectrumClass QLabel {
+    color: #d0d0d0;
+    background: transparent;
+}
+
+/* 2.6 数字微调框 (QDoubleSpinBox)
+ * 上下键按参考图做成右侧并排的两个细箭头（^ v），
+ * 不显示按钮底色和分隔线；箭头图片取自 qrc 资源。
+ */
+QWidget#SquareSpectrumClass QDoubleSpinBox {
+    background-color: #393939;
+    border: 1px solid #5f5f5f;
+    border-radius: 4px;
+    /* 右侧预留两个并排箭头的位置：Qt 只按单个按钮宽度收缩输入区，
+       多留出的 padding 可以避免输入框盖住左边的上箭头（否则点不到） */
+    padding: 2px 20px 2px 6px;
+    color: #e0e0e0;
+    selection-background-color: #32a6ff;
+    min-height: 18px;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox:hover {
+    border: 1px solid #767676;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox:focus {
+    border: 1px solid #32a6ff;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::up-button,
+QWidget#SquareSpectrumClass QDoubleSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    height: 22px;
+    background: transparent;
+    border: none;
+}
+
+/* 两个按钮并排：down 在最右侧，up 向左平移一个按钮宽度 */
+QWidget#SquareSpectrumClass QDoubleSpinBox::down-button {
+    right: 1px;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::up-button {
+    right: 21px;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::up-arrow {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up.svg);
+    width: 10px;
+    height: 6px;
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::down-arrow {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down.svg);
+    width: 10px;
+    height: 6px;
+}
+
+/* 悬停/按下时只提亮箭头本身（参考图中没有按钮底色） */
+QWidget#SquareSpectrumClass QDoubleSpinBox::up-arrow:hover {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up-hover.svg);
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::down-arrow:hover {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down-hover.svg);
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::up-arrow:pressed {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-up-hover.svg);
+}
+
+QWidget#SquareSpectrumClass QDoubleSpinBox::down-arrow:pressed {
+    image: url(:/WaveformdiagramopenGL/icons/arrow-down-hover.svg);
+}
+
+/* 2.7 滚动条 */
+QWidget#SquareSpectrumClass QScrollBar:vertical {
+    border: none;
+    background: #1e1e1e;
+    width: 10px;
+    margin: 0px;
+}
+QWidget#SquareSpectrumClass QScrollBar::handle:vertical {
+    background: #424242;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QWidget#SquareSpectrumClass QScrollBar::handle:vertical:hover {
+    background: #555555;
+}
+QWidget#SquareSpectrumClass QScrollBar::add-line:vertical, 
+QWidget#SquareSpectrumClass QScrollBar::sub-line:vertical {
+    height: 0px;
+}
